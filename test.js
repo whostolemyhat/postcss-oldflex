@@ -11,10 +11,13 @@ function run(t, input, output, opts = { }) {
         });
 }
 
-/* Write tests here
+ // Write tests here
 
-test('does something', t => {
-    return run(t, 'a{ }', 'a{ }', { });
+test('adds -webkit-flex decl', t => {
+    return run(t,
+      'a{ display: flex }',
+      'a{ display: -webkit-flex; display: flex }',
+      { });
 });
 
-*/
+
