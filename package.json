@@ -1,0 +1,33 @@
+{
+  "name": "postcss-oldflex",
+  "version": "0.0.0",
+  "description": "PostCSS plugin which always adds display: -webkit-flex prefix to flexbox declarations",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "flexbox",
+    "webkit"
+  ],
+  "author": "James Tease <james.tease@rotork.com>",
+  "license": "MIT",
+  "repository": "whostolemyhat/postcss-oldflex",
+  "bugs": {
+    "url": "https://github.com/whostolemyhat/postcss-oldflex/issues"
+  },
+  "homepage": "https://github.com/whostolemyhat/postcss-oldflex",
+  "dependencies": {
+    "postcss": "^5.0.21"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "eslint": "^2.10.0",
+    "eslint-config-postcss": "^2.0.2"
+  },
+  "scripts": {
+    "test": "ava && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5"
+  }
+}
