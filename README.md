@@ -1,6 +1,6 @@
 # PostCSS Oldflex [![Build Status][ci-img]][ci]
 
-[PostCSS] plugin which always adds display: -webkit-flex prefix to flexbox declarations.
+[PostCSS] plugin which always adds `display: -webkit-flex` prefix to flexbox declarations (eg for old Qt browsers).
 
 [PostCSS]: https://github.com/postcss/postcss
 [ci-img]:  https://travis-ci.org/whostolemyhat/postcss-oldflex.svg
@@ -8,13 +8,14 @@
 
 ```css
 .foo {
-    /* Input example */
+    display: flex;
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+  display: -webkit-flex;
+  display: flex;
 }
 ```
 
